@@ -13,7 +13,7 @@ import com.netflix.zuul.exception.ZuulException;
 @Component
 public class LoggingFilter extends ZuulFilter {
 
-	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	private static final Logger logger = LoggerFactory.getLogger(LoggingFilter.class);
 	
 	@Override
 	public boolean shouldFilter() {
